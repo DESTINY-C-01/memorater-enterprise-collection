@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { Playfair_Display, Inter } from 'next/font/google';
 import { Toaster } from 'sonner';
 import '@/styles/globals.css';
@@ -17,17 +17,20 @@ const body = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://memoraterinterprise.com'),
   title: {
-    default: 'Memorater Interprise Collection | Premium Women\'s Fashion',
-    template: '%s | Memorater Interprise Collection',
+    default: 'Memorater Enterprise Collection | Premium Women\'s Fashion',
+    template: '%s | Memorater Enterprise Collection',
   },
   description:
     'Shop premium women\'s shoes, heels, sneakers, sandals, bags and accessories. Browse, select, and order directly via WhatsApp.',
   openGraph: {
-    title: 'Memorater Interprise Collection',
+    title: 'Memorater Enterprise Collection',
     description: 'Premium women\'s fashion, ordered directly via WhatsApp.',
     type: 'website',
   },
   robots: { index: true, follow: true },
+  verification: {
+    google: '0ulJbuUuhOLL58gCu15JfvftDQ6ZqWG5cYVk5-LzDNE',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
